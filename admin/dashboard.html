@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | EventSphere</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     ADMIN LAYOUT
+===================================================== -->
+
+<div class="admin-layout">
+
+
+    <!-- =================================================
+         SIDEBAR
+    ================================================== -->
+
+    <aside class="admin-sidebar">
+
+        <div class="admin-logo">
+            EventSphere<span>.</span>
+        </div>
+
+        <p class="admin-label">
+            ADMIN PANEL
+        </p>
+
+
+        <nav class="admin-nav">
+
+            <a href="dashboard.html" class="active">
+                <span>▦</span>
+                Dashboard
+            </a>
+
+            <a href="manage-events.html">
+                <span>◫</span>
+                Manage Events
+            </a>
+
+            <a href="registrations.html">
+                <span>☷</span>
+                Registrations
+            </a>
+
+            <a href="gallery.html">
+                <span>▧</span>
+                Gallery
+            </a>
+
+            <a href="announcements.html">
+                <span>◉</span>
+                Announcements
+            </a>
+
+            <a href="messages.html">
+                <span>✉</span>
+                Contact Messages
+            </a>
+
+        </nav>
+
+
+        <div class="admin-sidebar-bottom">
+
+            <a href="../index.html">
+                ← View Website
+            </a>
+
+            <a href="login.html">
+                ↪ Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =================================================
+         MAIN CONTENT
+    ================================================== -->
+
+    <main class="admin-main">
+
+
+        <!-- TOP HEADER -->
+
+        <header class="admin-topbar">
+
+            <div>
+
+                <p class="admin-small-title">
+                    EVENTSPHERE ADMINISTRATION
+                </p>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+            </div>
+
+
+            <div class="admin-profile">
+
+                <div class="admin-avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <strong>
+                        Administrator
+                    </strong>
+
+                    <span>
+                        Admin
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             WELCOME SECTION
+        ================================================== -->
+
+        <section class="admin-welcome">
+
+            <div>
+
+                <p class="admin-small-title">
+                    OVERVIEW
+                </p>
+
+                <h2>
+                    Welcome back, Administrator.
+                </h2>
+
+                <p>
+                    Manage events, registrations, gallery content
+                    and communications from your dashboard.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             STATISTICS
+        ================================================== -->
+
+        <section class="admin-stats">
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    ◫
+                </div>
+
+                <div>
+
+                    <span>
+                        Total Events
+                    </span>
+
+                    <strong>
+                        24
+                    </strong>
+
+                    <small>
+                        Events available
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    ☷
+                </div>
+
+                <div>
+
+                    <span>
+                        Registrations
+                    </span>
+
+                    <strong>
+                        156
+                    </strong>
+
+                    <small>
+                        Total registrations
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    ▧
+                </div>
+
+                <div>
+
+                    <span>
+                        Gallery Items
+                    </span>
+
+                    <strong>
+                        48
+                    </strong>
+
+                    <small>
+                        Photos uploaded
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    ✉
+                </div>
+
+                <div>
+
+                    <span>
+                        Messages
+                    </span>
+
+                    <strong>
+                        12
+                    </strong>
+
+                    <small>
+                        New messages
+                    </small>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTENT GRID
+        ================================================== -->
+
+        <section class="admin-content-grid">
+
+
+            <!-- RECENT EVENTS -->
+
+            <div class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <p class="admin-small-title">
+                            EVENT MANAGEMENT
+                        </p>
+
+                        <h2>
+                            Recent Events
+                        </h2>
+
+                    </div>
+
+                    <a href="manage-events.html" class="admin-panel-link">
+                        View All
+                    </a>
+
+                </div>
+
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>Event</th>
+                                <th>Date</th>
+                                <th>Location</th>
+                                <th>Status</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Tech Innovation Summit
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    15 Sep 2026
+                                </td>
+
+                                <td>
+                                    Main Auditorium
+                                </td>
+
+                                <td>
+                                    <span class="status active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Music & Cultural Fest
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    22 Sep 2026
+                                </td>
+
+                                <td>
+                                    City Convention Hall
+                                </td>
+
+                                <td>
+                                    <span class="status active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Entrepreneurship Meet
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    30 Sep 2026
+                                </td>
+
+                                <td>
+                                    Business Centre
+                                </td>
+
+                                <td>
+                                    <span class="status upcoming">
+                                        Upcoming
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- QUICK ACTIONS -->
+
+            <div class="admin-panel quick-actions">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <p class="admin-small-title">
+                            SHORTCUTS
+                        </p>
+
+                        <h2>
+                            Quick Actions
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <a href="manage-events.html" class="quick-action">
+
+                    <div class="quick-action-icon">
+                        +
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Manage Events
+                        </strong>
+
+                        <span>
+                            Add or update events
+                        </span>
+
+                    </div>
+
+                    <span class="quick-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <a href="registrations.html" class="quick-action">
+
+                    <div class="quick-action-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            View Registrations
+                        </strong>
+
+                        <span>
+                            Check attendee registrations
+                        </span>
+
+                    </div>
+
+                    <span class="quick-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <a href="announcements.html" class="quick-action">
+
+                    <div class="quick-action-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Announcements
+                        </strong>
+
+                        <span>
+                            Publish an announcement
+                        </span>
+
+                    </div>
+
+                    <span class="quick-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <a href="messages.html" class="quick-action">
+
+                    <div class="quick-action-icon">
+                        @
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Contact Messages
+                        </strong>
+
+                        <span>
+                            View user enquiries
+                        </span>
+
+                    </div>
+
+                    <span class="quick-arrow">
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             RECENT REGISTRATIONS
+        ================================================== -->
+
+        <section class="admin-panel registrations-panel">
+
+            <div class="admin-panel-header">
+
+                <div>
+
+                    <p class="admin-small-title">
+                        ATTENDEES
+                    </p>
+
+                    <h2>
+                        Recent Registrations
+                    </h2>
+
+                </div>
+
+                <a href="registrations.html" class="admin-panel-link">
+                    View All
+                </a>
+
+            </div>
+
+
+            <div class="admin-table-wrapper">
+
+                <table class="admin-table">
+
+                    <thead>
+
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Event</th>
+                            <th>Registration Date</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                Rahul Sharma
+                            </td>
+
+                            <td>
+                                rahul@example.com
+                            </td>
+
+                            <td>
+                                Tech Innovation Summit
+                            </td>
+
+                            <td>
+                                05 Sep 2026
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Ananya Das
+                            </td>
+
+                            <td>
+                                ananya@example.com
+                            </td>
+
+                            <td>
+                                Music & Cultural Fest
+                            </td>
+
+                            <td>
+                                06 Sep 2026
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Arjun Mehta
+                            </td>
+
+                            <td>
+                                arjun@example.com
+                            </td>
+
+                            <td>
+                                Entrepreneurship Meet
+                            </td>
+
+                            <td>
+                                07 Sep 2026
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FOOTER
+        ================================================== -->
+
+        <footer class="admin-footer">
+
+            <p>
+                © 2026 EventSphere Admin Panel
+            </p>
+
+            <p>
+                Event Management System
+            </p>
+
+        </footer>
+
+
+    </main>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery Management | EventSphere</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="admin-layout">
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="admin-sidebar">
+
+        <div class="admin-logo">
+            EventSphere<span>.</span>
+        </div>
+
+        <p class="admin-label">
+            ADMIN PANEL
+        </p>
+
+        <nav class="admin-nav">
+
+            <a href="dashboard.html">
+                <span>▦</span>
+                Dashboard
+            </a>
+
+            <a href="manage-events.html">
+                <span>◫</span>
+                Manage Events
+            </a>
+
+            <a href="registrations.html">
+                <span>☷</span>
+                Registrations
+            </a>
+
+            <a href="gallery.html" class="active">
+                <span>▧</span>
+                Gallery
+            </a>
+
+            <a href="announcements.html">
+                <span>◉</span>
+                Announcements
+            </a>
+
+            <a href="messages.html">
+                <span>✉</span>
+                Contact Messages
+            </a>
+
+        </nav>
+
+
+        <div class="admin-sidebar-bottom">
+
+            <a href="../index.html">
+                ← View Website
+            </a>
+
+            <a href="login.html">
+                ↪ Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="admin-main">
+
+
+        <!-- TOP HEADER -->
+
+        <header class="admin-topbar">
+
+            <div>
+
+                <p class="admin-small-title">
+                    EVENTSPHERE ADMINISTRATION
+                </p>
+
+                <h1>
+                    Gallery
+                </h1>
+
+            </div>
+
+
+            <div class="admin-profile">
+
+                <div class="admin-avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <strong>
+                        Administrator
+                    </strong>
+
+                    <span>
+                        Admin
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =====================================================
+             PAGE INTRODUCTION
+        ====================================================== -->
+
+        <section class="admin-welcome">
+
+            <div>
+
+                <p class="admin-small-title">
+                    MEDIA MANAGEMENT
+                </p>
+
+                <h2>
+                    Manage Event Gallery
+                </h2>
+
+                <p>
+                    Upload, organize and manage photographs
+                    from EventSphere events.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             STATISTICS
+        ====================================================== -->
+
+        <section class="admin-stats">
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    ▧
+                </div>
+
+                <div>
+
+                    <span>
+                        Total Images
+                    </span>
+
+                    <strong>
+                        48
+                    </strong>
+
+                    <small>
+                        Gallery images
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    ◫
+                </div>
+
+                <div>
+
+                    <span>
+                        Event Albums
+                    </span>
+
+                    <strong>
+                        8
+                    </strong>
+
+                    <small>
+                        Available albums
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <span>
+                        Published
+                    </span>
+
+                    <strong>
+                        44
+                    </strong>
+
+                    <small>
+                        Visible to users
+                    </small>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             UPLOAD SECTION
+        ====================================================== -->
+
+        <section class="admin-panel">
+
+            <div class="admin-panel-header">
+
+                <div>
+
+                    <p class="admin-small-title">
+                        MEDIA
+                    </p>
+
+                    <h2>
+                        Add Gallery Image
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <form class="admin-form">
+
+
+                <div class="admin-form-row">
+
+                    <div class="admin-form-group">
+
+                        <label for="gallery-title">
+                            Image Title
+                        </label>
+
+                        <input
+                            type="text"
+                            id="gallery-title"
+                            name="gallery-title"
+                            placeholder="Enter image title">
+
+                    </div>
+
+
+                    <div class="admin-form-group">
+
+                        <label for="gallery-event">
+                            Event
+                        </label>
+
+                        <select
+                            id="gallery-event"
+                            name="gallery-event">
+
+                            <option value="">
+                                Select Event
+                            </option>
+
+                            <option value="tech-summit">
+                                Tech Innovation Summit
+                            </option>
+
+                            <option value="music-fest">
+                                Music & Cultural Fest
+                            </option>
+
+                            <option value="entrepreneurship">
+                                Entrepreneurship Meet
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="admin-form-group">
+
+                    <label for="gallery-image">
+                        Select Image
+                    </label>
+
+                    <input
+                        type="file"
+                        id="gallery-image"
+                        name="gallery-image"
+                        accept="image/*">
+
+                </div>
+
+
+
+                <div class="admin-form-group">
+
+                    <label for="gallery-description">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="gallery-description"
+                        name="gallery-description"
+                        rows="4"
+                        placeholder="Enter a short description"></textarea>
+
+                </div>
+
+
+
+                <div class="admin-form-actions">
+
+                    <button
+                        type="reset"
+                        class="admin-secondary-button">
+                        Clear
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="admin-button">
+                        Add to Gallery
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             GALLERY PREVIEW
+        ====================================================== -->
+
+        <section class="admin-panel">
+
+            <div class="admin-panel-header">
+
+                <div>
+
+                    <p class="admin-small-title">
+                        GALLERY
+                    </p>
+
+                    <h2>
+                        Recent Images
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="admin-gallery-grid">
+
+
+                <!-- IMAGE 1 -->
+
+                <div class="admin-gallery-card">
+
+                    <div class="admin-gallery-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80"
+                            alt="Technology conference">
+
+                    </div>
+
+                    <div class="admin-gallery-content">
+
+                        <h3>
+                            Tech Innovation Summit
+                        </h3>
+
+                        <p>
+                            Technology Conference
+                        </p>
+
+                        <div class="admin-gallery-actions">
+
+                            <span class="status active">
+                                Published
+                            </span>
+
+                            <a href="#" class="admin-action">
+                                Edit
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- IMAGE 2 -->
+
+                <div class="admin-gallery-card">
+
+                    <div class="admin-gallery-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80"
+                            alt="Music festival">
+
+                    </div>
+
+                    <div class="admin-gallery-content">
+
+                        <h3>
+                            Music & Cultural Fest
+                        </h3>
+
+                        <p>
+                            Cultural Event
+                        </p>
+
+                        <div class="admin-gallery-actions">
+
+                            <span class="status active">
+                                Published
+                            </span>
+
+                            <a href="#" class="admin-action">
+                                Edit
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- IMAGE 3 -->
+
+                <div class="admin-gallery-card">
+
+                    <div class="admin-gallery-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80"
+                            alt="Business meeting">
+
+                    </div>
+
+                    <div class="admin-gallery-content">
+
+                        <h3>
+                            Entrepreneurship Meet
+                        </h3>
+
+                        <p>
+                            Business Event
+                        </p>
+
+                        <div class="admin-gallery-actions">
+
+                            <span class="status active">
+                                Published
+                            </span>
+
+                            <a href="#" class="admin-action">
+                                Edit
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- IMAGE 4 -->
+
+                <div class="admin-gallery-card">
+
+                    <div class="admin-gallery-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80"
+                            alt="People at an event">
+
+                    </div>
+
+                    <div class="admin-gallery-content">
+
+                        <h3>
+                            Community Gathering
+                        </h3>
+
+                        <p>
+                            Community Event
+                        </p>
+
+                        <div class="admin-gallery-actions">
+
+                            <span class="status upcoming">
+                                Draft
+                            </span>
+
+                            <a href="#" class="admin-action">
+                                Edit
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- IMAGE 5 -->
+
+                <div class="admin-gallery-card">
+
+                    <div class="admin-gallery-image">
+
+                        <img
+                            src="https://images.unsplash.com
