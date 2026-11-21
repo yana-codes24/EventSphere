@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Announcements | EventSphere</title>
+    <title>Announcements | EventSphere Admin</title>
 
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -14,10 +15,7 @@
 
 <div class="admin-layout">
 
-
-    <!-- =====================================================
-         SIDEBAR
-    ====================================================== -->
+    <!-- SIDEBAR -->
 
     <aside class="admin-sidebar">
 
@@ -78,13 +76,9 @@
     </aside>
 
 
-
-    <!-- =====================================================
-         MAIN CONTENT
-    ====================================================== -->
+    <!-- MAIN CONTENT -->
 
     <main class="admin-main">
-
 
         <!-- TOP HEADER -->
 
@@ -102,7 +96,6 @@
 
             </div>
 
-
             <div class="admin-profile">
 
                 <div class="admin-avatar">
@@ -110,15 +103,8 @@
                 </div>
 
                 <div>
-
-                    <strong>
-                        Administrator
-                    </strong>
-
-                    <span>
-                        Admin
-                    </span>
-
+                    <strong>Administrator</strong>
+                    <span>Admin</span>
                 </div>
 
             </div>
@@ -126,9 +112,366 @@
         </header>
 
 
+        <!-- WELCOME SECTION -->
 
-        <!-- =====================================================
-             PAGE INTRODUCTION
-        ====================================================== -->
+        <section class="admin-welcome">
 
-        <
+            <div>
+
+                <p class="admin-small-title">
+                    COMMUNICATIONS
+                </p>
+
+                <h2>
+                    Manage Announcements
+                </h2>
+
+                <p>
+                    Create and manage important updates and
+                    announcements for EventSphere visitors.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATISTICS -->
+
+        <section class="admin-stats">
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    ◉
+                </div>
+
+                <div>
+                    <span>Total Announcements</span>
+                    <strong>08</strong>
+                    <small>All announcements</small>
+                </div>
+
+            </div>
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <span>Published</span>
+                    <strong>06</strong>
+                    <small>Currently published</small>
+                </div>
+
+            </div>
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    ◷
+                </div>
+
+                <div>
+                    <span>Scheduled</span>
+                    <strong>02</strong>
+                    <small>Upcoming announcements</small>
+                </div>
+
+            </div>
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    !
+                </div>
+
+                <div>
+                    <span>Important Updates</span>
+                    <strong>03</strong>
+                    <small>Priority announcements</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CREATE ANNOUNCEMENT -->
+
+        <section class="admin-panel">
+
+            <div class="admin-panel-header">
+
+                <div>
+
+                    <p class="admin-small-title">
+                        NEW UPDATE
+                    </p>
+
+                    <h2>
+                        Create Announcement
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+
+                    <label for="announcement-title">
+                        Announcement Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="announcement-title"
+                        name="title"
+                        placeholder="Enter announcement title"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="announcement-category">
+                        Category
+                    </label>
+
+                    <select
+                        id="announcement-category"
+                        name="category"
+                        required
+                    >
+
+                        <option value="">
+                            Select category
+                        </option>
+
+                        <option value="event-update">
+                            Event Update
+                        </option>
+
+                        <option value="registration">
+                            Registration Notice
+                        </option>
+
+                        <option value="general">
+                            General Announcement
+                        </option>
+
+                        <option value="important">
+                            Important Notice
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="announcement-date">
+                        Announcement Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="announcement-date"
+                        name="date"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="announcement-message">
+                        Announcement Message
+                    </label>
+
+                    <textarea
+                        id="announcement-message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your announcement here..."
+                        required
+                    ></textarea>
+
+                </div>
+
+                <button type="submit" class="submit-button">
+                    Publish Announcement
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- ANNOUNCEMENTS TABLE -->
+
+        <section class="admin-panel registrations-panel">
+
+            <div class="admin-panel-header">
+
+                <div>
+
+                    <p class="admin-small-title">
+                        ANNOUNCEMENT MANAGEMENT
+                    </p>
+
+                    <h2>
+                        Recent Announcements
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="admin-table-wrapper">
+
+                <table class="admin-table">
+
+                    <thead>
+
+                        <tr>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <strong>
+                                    Tech Summit Registration Open
+                                </strong>
+                            </td>
+
+                            <td>
+                                Event Update
+                            </td>
+
+                            <td>
+                                05 Sep 2026
+                            </td>
+
+                            <td>
+                                <span class="status active">
+                                    Published
+                                </span>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <strong>
+                                    Music Fest Coming Soon
+                                </strong>
+                            </td>
+
+                            <td>
+                                Event Update
+                            </td>
+
+                            <td>
+                                08 Sep 2026
+                            </td>
+
+                            <td>
+                                <span class="status active">
+                                    Published
+                                </span>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <strong>
+                                    Registration Guidelines
+                                </strong>
+                            </td>
+
+                            <td>
+                                Registration Notice
+                            </td>
+
+                            <td>
+                                10 Sep 2026
+                            </td>
+
+                            <td>
+                                <span class="status upcoming">
+                                    Scheduled
+                                </span>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <strong>
+                                    Important Event Notice
+                                </strong>
+                            </td>
+
+                            <td>
+                                Important Notice
+                            </td>
+
+                            <td>
+                                12 Sep 2026
+                            </td>
+
+                            <td>
+                                <span class="status active">
+                                    Published
+                                </span>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer class="admin-footer">
+
+            <p>
+                © 2026 EventSphere Admin Panel
+            </p>
+
+            <p>
+                Event Management System
+            </p>
+
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+</html>
